@@ -1,0 +1,137 @@
+:root {
+  --Dark_cyan: hsl(185, 75%, 39%);
+  --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+  --Dark_grayish_blue: hsl(227, 10%, 46%);
+  --Dark_gray: hsl(0, 0%, 59%);
+  --Tarjeta_White: hsl(0, 0%, 100%);
+  --tarjeta_shadow: hsl(60, 7%, 36%);
+  --tarjeta_division: hsl(0, 6%, 61%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--Dark_cyan);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 45vw bottom 50vh, left 50vw top 50vh;
+}
+
+.principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.tarjeta {
+  background-color: var(--Tarjeta_White);
+  width: 328px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 4px 4px 4px var(--tarjeta_shadow);
+          box-shadow: 4px 4px 4px var(--tarjeta_shadow);
+}
+
+.tarjeta-cabecera {
+  width: 100%;
+  display: block;
+}
+
+.tarjeta-cuerpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.5px solid var(--tarjeta_division);
+}
+
+.tarjeta-cuerpo-foto {
+  border: 6px solid var(--Tarjeta_White);
+  border-radius: 100%;
+  margin-top: calc(-50px - 6px);
+  background-color: var(--Tarjeta_White);
+}
+
+.tarjeta-cuerpo-titulo {
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
+.tarjeta-cuerpo-titulo span {
+  color: var(--Dark_gray);
+  font-weight: 400;
+  margin-left: 1.5rem;
+}
+
+.tarjeta-cuerpo-texto {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  color: var(--Dark_gray);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.tarjeta-pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.tarjeta-pie-social {
+  text-align: center;
+}
+
+.tarjeta-pie-social h3 {
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
+.tarjeta-pie-social p {
+  letter-spacing: 0.1rem;
+  color: var(--Dark_gray);
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-top: -8rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=estilos.css.map */
