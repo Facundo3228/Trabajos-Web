@@ -5,7 +5,7 @@
     --Dark_gray: hsl(0, 0%, 59%);
     --Tarjeta_White: hsl(0, 0%, 100%);
     --tarjeta_shadow: hsl(60, 7%, 36%);
-    --tarjeta_division: hsl(0, 6%, 61%);
+    --tarjeta_division: hsla(0, 4%, 71%, 0.329);
 }
 
 html {
@@ -92,7 +92,7 @@ body {
             }
 
             p {
-                letter-spacing: 0.1rem;
+                //letter-spacing: 0.1rem;
                 color: var(--Dark_gray);
                 font-weight: 400;
                 font-size: 1.6rem;
